@@ -36,6 +36,7 @@
 - https://github.com/wyzxxz/shiro_rce
 - https://github.com/bkfish/Awesome_shiro
 - https://github.com/zhzyker/shiro-1.2.4-rce
+- https://github.com/pmiaowu/BurpShiroPassiveScan
 
 ### HackShiro With Java
 - https://github.com/feihong-cs/ShiroExploit
