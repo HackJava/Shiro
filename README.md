@@ -2,12 +2,12 @@
 
 本项目创建于2020年8月11日。记录自己在学习Shiro漏洞过程中遇到的一些知识。本项目会持续更新，最近的一次更新时间为2020年10月09日。
 
-- [01-Shiro基础知识](https://github.com/0e0w/HackShiro#%E4%B8%80shiro%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
-- [02-Shiro漏洞汇总](https://github.com/0e0w/HackShiro#%E4%BA%8Cshiro%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
-- [03-Shiro框架识别](https://github.com/0e0w/HackShiro#%E4%B8%89shiro%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
-- [04-Shiro漏洞检测](https://github.com/0e0w/HackShiro#%E5%9B%9Bshiro%E6%BC%8F%E6%B4%9E%E6%A3%80%E6%B5%8B)
-- [05-Shiro漏洞利用](https://github.com/0e0w/HackShiro#%E4%BA%94shiro%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8)
-- [06-Shiro靶场环境](https://github.com/0e0w/HackShiro#%E5%85%ADshiro%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
+- [0x01-Shiro基础知识](https://github.com/0e0w/HackShiro#%E4%B8%80shiro%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
+- [0x02-Shiro漏洞汇总](https://github.com/0e0w/HackShiro#%E4%BA%8Cshiro%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
+- [0x03-Shiro框架识别](https://github.com/0e0w/HackShiro#%E4%B8%89shiro%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
+- [0x04-Shiro漏洞检测](https://github.com/0e0w/HackShiro#%E5%9B%9Bshiro%E6%BC%8F%E6%B4%9E%E6%A3%80%E6%B5%8B)
+- [0x05-Shiro漏洞利用](https://github.com/0e0w/HackShiro#%E4%BA%94shiro%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8)
+- [0x06-Shiro靶场环境](https://github.com/0e0w/HackShiro#%E5%85%ADshiro%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
 
 ## 一、Shiro基础知识
 - http://greycode.github.io/shiro/doc/reference.html
