@@ -47,6 +47,9 @@
 - https://github.com/potats0/shiroPoc
 - https://github.com/tangxiaofeng7/Shiroexploit
 - https://github.com/fupinglee/ShiroScan
+- https://github.com/admintony/shiro_rememberMe_Rce
+- https://github.com/Ares-X/shiro-exploit
+- https://github.com/j1anFen/shiro_attack
 
 ## 六、Shiro靶场环境
 
