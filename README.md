@@ -1,6 +1,6 @@
 # HackShiro
 
-本项目创建于2020年8月11日。记录自己在学习Shiro漏洞过程中遇到的一些知识。本项目会持续更新，最近的一次更新时间为2020年11月10日。
+本项目创建于2020年8月11日。记录自己在学习Shiro漏洞过程中遇到的一些知识。本项目会持续更新，最近的一次更新时间为2020年11月16日。
 
 - [0x01-Shiro基础知识](https://github.com/0e0w/HackShiro#%E4%B8%80shiro%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [0x02-Shiro漏洞汇总](https://github.com/0e0w/HackShiro#%E4%BA%8Cshiro%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
@@ -14,11 +14,11 @@
 
 ## 二、Shiro漏洞汇总
 
-本项目注重漏洞利用效果。详细的漏洞分析请参考本站的关于Shiro分析的文章。
-
-- Shiro rememberMe反序列化漏洞：CVE-2016-4437（Shiro-550）
-- Shiro Padding Oracle Attack：Shiro-721
-- Apache Shiro身份验证绕过漏洞：CVE-2020-11989
+- CVE-2020-17510
+- CVE-2020-13933
+- CVE-2020-11989#Apache Shiro身份验证绕过漏洞
+- CVE-2016-6802#Shiro Padding Oracle Attack
+- CVE-2016-4437#Shiro rememberMe反序列化漏洞
 
 ## 三、Shiro框架识别
 
@@ -29,6 +29,9 @@
 ## 四、Shiro漏洞检测
 
 ## 五、Shiro漏洞利用
+
+本项目注重漏洞利用效果。详细的漏洞分析请参考本站的关于Shiro分析的文章。
+Shiro命令回显最早是Xray高级版的利用方式。此后一些安全研究人员根据Xray的相关思路编写出了课直接回显的漏洞利用程序。
 
 - https://github.com/sv3nbeast/ShiroScan
 - https://github.com/insightglacier/Shiro_exploit
@@ -50,10 +53,9 @@
 - https://github.com/Ares-X/shiro-exploit
 - https://github.com/j1anFen/shiro_attack
 - https://github.com/admintony/shiro_rememberMe_Rce
+- https://github.com/Veraxy01/Shiro-EXP
 
 ## 六、Shiro靶场环境
-
-Shiro命令回显最早是Xray高级版的利用方式。此后一些安全研究人员根据Xray的相关思路编写出了课直接回显的漏洞利用程序。比如下面这些项目。
 
 ## 七、Shiro参考资源
 
