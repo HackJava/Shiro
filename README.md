@@ -1,6 +1,6 @@
 # HackShiro
 
-本项目创建于2020年8月11日。记录自己在学习Shiro漏洞过程中遇到的一些知识。本项目会持续更新，最近的一次更新时间为2021年5月17日。
+本项目创建于2020年8月11日。记录自己在学习Shiro漏洞过程中遇到的一些知识。本项目会持续更新，最近的一次更新时间为2021年6月21日。
 
 - [01-Shiro基础知识](https://github.com/0e0w/HackShiro#%E4%B8%80shiro%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
 - [02-Shiro漏洞汇总](https://github.com/0e0w/HackShiro#%E4%BA%8Cshiro%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
@@ -64,6 +64,7 @@
 - https://github.com/mmioimm/shiro_echo
 - https://github.com/dr0op/shiro-550-with-NoCC
 - https://github.com/M4da0/ShiroExploit
+- https://github.com/inspiringz/Shiro-721
 
 ## 六、Shiro靶场环境
 
