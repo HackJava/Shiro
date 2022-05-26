@@ -1,19 +1,26 @@
 # HackShiro
 
-本项目创建于2020年8月11日。记录自己在学习Shiro漏洞过程中遇到的一些知识。本项目会持续更新，最近的一次更新时间为2022年4月23日。
+本项目创建于2020年8月11日。记录自己在学习Shiro漏洞过程中遇到的一些知识。本项目会持续更新，最近的一次更新时间为2022年5月15日。作者：[0e0w](https://github.com/0e0w)
 
-- [01-Shiro基础知识](https://github.com/0e0w/HackShiro#%E4%B8%80shiro%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
-- [02-Shiro漏洞汇总](https://github.com/0e0w/HackShiro#%E4%BA%8Cshiro%E6%BC%8F%E6%B4%9E%E6%B1%87%E6%80%BB)
-- [03-Shiro框架识别](https://github.com/0e0w/HackShiro#%E4%B8%89shiro%E6%A1%86%E6%9E%B6%E8%AF%86%E5%88%AB)
-- [04-Shiro漏洞检测](https://github.com/0e0w/HackShiro#%E5%9B%9Bshiro%E6%BC%8F%E6%B4%9E%E6%A3%80%E6%B5%8B)
-- [05-Shiro漏洞利用](https://github.com/0e0w/HackShiro#%E4%BA%94shiro%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8)
-- [06-Shiro靶场环境](https://github.com/0e0w/HackShiro#%E5%85%ADshiro%E9%9D%B6%E5%9C%BA%E7%8E%AF%E5%A2%83)
+- [01-Shiro基础知识]()
+- [02-Shiro框架识别]()
+- [03-Shiro漏洞汇总]()
+- [04-Shiro漏洞检测]()
+- [05-Shiro漏洞利用]()
+- [06-Shiro靶场环境]()
 
-## 0x01-Shiro基础知识
+## 01-Shiro基础知识
 - https://github.com/apache/shiro
 - http://greycode.github.io/shiro/doc/reference.html
 
-## 0x02-Shiro漏洞汇总
+## 02-Shiro框架识别
+
+- 请求包的cookie中存在rememberMe字段。
+- 响应包中存在rememberMe=deleteMe字段。
+- 请求包中存在rememberMe=x时，响应包中存在rememberMe=deleteMe。
+- 检测工具：Banli.exe is shiro
+
+## 03-Shiro漏洞汇总
 
 - CVE-2020-17523
 - CVE-2020-17510
@@ -22,19 +29,81 @@
 - CVE-2016-6802#Shiro Padding Oracle Attack
 - CVE-2016-4437#Shiro rememberMe反序列化漏洞
 
-## 0x03-Shiro框架识别
+## 04-Shiro漏洞检测
 
-- 请求包的cookie中存在rememberMe字段。
-- 响应包中存在rememberMe=deleteMe字段。
-- 请求包中存在rememberMe=x时，响应包中存在rememberMe=deleteMe。
-- 检测工具：isshiro.exe
-
-## 0x04-Shiro漏洞检测
-
+- KEYS
+- GCM
+- Gadget
+  - CommonsBeanutils1
+  - CommonsBeanutils1_192
+  - CommonsBeanutilsAttrCompare
+  - CommonsBeanutilsAttrCompare_192
+  - CommonsBeanutilsObjectToStringComparator
+  - CommonsBeanutilsObjectToStringComparator_192
+  - CommonsBeanutilsPropertySource
+  - CommonsBeanutilsPropertySource_192
+  - CommonsBeanutilsString
+  - CommonsBeanutilsString_192
+  - CommonsCollections2
+  - CommonsCollections3
+  - CommonsCollectionsK1
+  - CommonsCollectionsK2
+  - CommonsBeanutils1
+  - CommonsBeanutils1_192
+  - CommonsBeanutilsAttrCompare
+  - CommonsBeanutilsAttrCompare_192
+  - CommonsBeanutilsObjectToStringComparator
+  - CommonsBeanutilsObjectToStringComparator_192
+  - CommonsBeanutilsPropertySource
+  - CommonsBeanutilsPropertySource_192
+  - CommonsBeanutilsString
+  - CommonsBeanutilsString_192
+  - CommonsCollections2
+  - CommonsCollections3
+  - CommonsCollectionsK1
+  - CommonsCollectionsK2
+  - [ ] 测试:CommonsBeanutils1_192  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutils1_192  回显方式: SpringEcho
+    [x] 测试:CommonsCollections2  回显方式: TomcatEcho
+    [x] 测试:CommonsCollections2  回显方式: SpringEcho
+    [x] 测试:CommonsCollections3  回显方式: TomcatEcho
+    [x] 测试:CommonsCollections3  回显方式: SpringEcho
+    [x] 测试:CommonsCollectionsK1  回显方式: TomcatEcho
+    [x] 测试:CommonsCollectionsK1  回显方式: SpringEcho
+    [x] 测试:CommonsCollectionsK2  回显方式: TomcatEcho
+    [x] 测试:CommonsCollectionsK2  回显方式: SpringEcho
+    [x] 测试:CommonsBeanutilsString  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutilsString  回显方式: SpringEcho
+    [x] 测试:CommonsBeanutilsString_192  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutilsString_192  回显方式: SpringEcho
+    [x] 测试:CommonsBeanutilsAttrCompare  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutilsAttrCompare  回显方式: SpringEcho
+    [x] 测试:CommonsBeanutilsAttrCompare_192  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutilsAttrCompare_192  回显方式: SpringEcho
+    [x] 测试:CommonsBeanutilsPropertySource  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutilsPropertySource  回显方式: SpringEcho
+    [x] 测试:CommonsBeanutilsPropertySource_192  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutilsPropertySource_192  回显方式: SpringEcho
+    [x] 测试:CommonsBeanutilsObjectToStringComparator  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutilsObjectToStringComparator  回显方式: SpringEcho
+    [x] 测试:CommonsBeanutilsObjectToStringComparator_192  回显方式: TomcatEcho
+    [x] 测试:CommonsBeanutilsObjectToStringComparator_192  回显方式: SpringEcho
+- 回显
+  - LinuxEcho
+  - SpringEcho1
+  - SpringEcho2
+  - TomcatEcho
+  - TomcatEcho2
+  - JBossEcho
+  - WeblogicEcho
+  - ResinEcho
+  - JettyEcho
+  - AutoFindRequestEcho
+  - WriteFileEcho
 - 可以出网
 - 不可出网
 
-## 0x05-Shiro漏洞利用
+## 05-Shiro漏洞利用
 
 本项目注重漏洞利用效果。详细的漏洞分析请参考本站的关于Shiro分析的文章。Shiro命令回显最早是Xray高级版的利用方式。此后安全研究人员根据Xray的相关思路编写出了可直接回显的漏洞利用程序。
 
@@ -69,13 +138,14 @@
 - https://github.com/KpLi0rn/ShiroExploit
 - https://github.com/safe6Sec/ShiroExp
 - https://github.com/longofo/PaddingOracleAttack-Shiro-721
+- https://github.com/myzxcg/ShiroKeyCheck
 
-## 0x06-Shiro靶场环境
+## 06-Shiro靶场环境
 
 - https://vulhub.org
 - https://fofapro.github.io/vulfocus
 
-## 0x07-Shiro参考资源
+## 07-Shiro参考资源
 
 - https://paper.seebug.org/1290
 - https://koalr.me/post/shiro-lou-dong-jian-ce
