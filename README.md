@@ -139,6 +139,7 @@
 - https://github.com/safe6Sec/ShiroExp
 - https://github.com/longofo/PaddingOracleAttack-Shiro-721
 - https://github.com/myzxcg/ShiroKeyCheck
+- https://github.com/emo-cat/shiro_exploit
 
 ## 06-Shiro靶场环境
 
